@@ -71,6 +71,7 @@ class RobRatonProblem(SearchProblem):
         def manhattan(p1, p2):
             return abs(p1[0] - p2[0]) + abs(p1[1] - p2[1])
 
+
         distancias = [manhattan(raton_pos, comida) for comida in comidas]
         distancias.sort()
 
